@@ -1,0 +1,29 @@
+{
+  "name": "blockchain-voting-contracts",
+  "version": "1.0.0",
+  "description": "Smart contracts for the Blockchain Voting system",
+  "main": "index.js",
+  "scripts": {
+    "compile": "truffle compile",
+    "migrate": "truffle migrate",
+    "deploy": "truffle migrate --reset",
+    "test": "truffle test",
+    "test:coverage": "truffle run coverage",
+    "test:gas": "truffle test --reporter eth-gas-reporter",
+    "dev": "truffle develop",
+    "build": "truffle compile && truffle migrate --reset",
+    "verify": "truffle run verify"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^4.9.3",
+    "@truffle/hdwallet-provider": "^2.1.15"
+  },
+  "devDependencies": {
+    "truffle": "^5.11.5",
+    "ganache-cli": "^6.12.2",
+    "@openzeppelin/test-helpers": "^0.5.16",
+    "solidity-coverage": "^0.8.5",
+    "truffle-plugin-verify": "^0.6.1"
+  }
+}
+
