@@ -1,0 +1,37 @@
+{
+  "name": "blockchain-voting",
+  "version": "1.0.0",
+  "description": "Blockchain Voting - A decentralized voting system built on Ethereum",
+  "main": "index.js",
+  "scripts": {
+    "compile": "truffle compile",
+    "migrate": "truffle migrate",
+    "test": "truffle test",
+    "dev": "truffle develop",
+    "frontend:install": "cd frontend && npm install",
+    "frontend:start": "cd frontend && npm start",
+    "frontend:build": "cd frontend && npm run build",
+    "frontend:test": "cd frontend && npm test",
+    "ganache": "ganache-cli",
+    "setup": "npm install && npm run frontend:install"
+  },
+  "keywords": [
+    "blockchain",
+    "voting",
+    "ethereum",
+    "smart-contracts",
+    "decentralized",
+    "dapp"
+  ],
+  "author": "Blockchain Voting Team",
+  "license": "MIT",
+  "devDependencies": {
+    "@truffle/hdwallet-provider": "^2.1.15",
+    "truffle": "^5.11.5",
+    "ganache-cli": "^6.12.2"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^4.9.3",
+    "dotenv": "^16.3.1"
+  }
+}
